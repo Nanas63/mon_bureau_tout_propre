@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+          
+        <h1>
+            Demandez votre devis gratuit
+        </h1>
+        </div><br>
+        <p>
+            Vous souhaitez un devis gratuit pour le nettoyage de vos locaux ? 
+        </p>
+        <p>
+            Simulez le coût de votre prestation en remplissant le formulaire ci-dessous.
+        </p><br><br>
+
+        
+        <form id="devisForm">
+            <label for="surface">Surface en m2 :</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="fréquence">Fréquence :</label>
+            <!-- <input type="text" id="fréquence" name="fréquence" required> -->
+            <input type="radio" id="1 fois" name="frequency" value="one" required>
+            <label for="1 fois par semaine">1 fois par semaine</label>
+            <input type="radio" id="2 fois" name="frequency" value="two">
+            <label for="2 fois par semaine"></label>
+            <input type="radio" id="5 fois" name="frequency" value="five">
+            <label for="5 fois par semaine">5 fois par semaine</label>
+            
+
+            <label for="options">Options Vitres:</label>
+            <select id="options" name="options">
+                <option value="option1">Oui</option>
+                <option value="option2">Non</option>
+            
+    </header>
+</body>
+<script src="./script.js"></script>
+</html>
