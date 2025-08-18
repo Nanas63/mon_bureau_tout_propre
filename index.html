@@ -8,38 +8,49 @@
 </head>
 <body>
     <header>
-        <div class="container">
-          
-        <h1>
-            Demandez votre devis gratuit
-        </h1>
-        </div><br>
-        <p>
+        <form>
+            <div class="container">
+                <h1>
+                Demandez votre devis gratuit
+                </h1>
+            </div>
+            <br>
+            <p>
             Vous souhaitez un devis gratuit pour le nettoyage de vos locaux ? 
-        </p>
-        <p>
+            </p>
+            <p>
             Simulez le coût de votre prestation en remplissant le formulaire ci-dessous.
-        </p><br><br>
+            </p>
+            <br>
+            <br>
 
-        
-        <form id="devisForm">
-            <label for="surface">Surface en m2 :</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="fréquence">Fréquence :</label>
-            <!-- <input type="text" id="fréquence" name="fréquence" required> -->
-            <input type="radio" id="1 fois" name="frequency" value="one" required>
-            <label for="1 fois par semaine">1 fois par semaine</label>
-            <input type="radio" id="2 fois" name="frequency" value="two">
-            <label for="2 fois par semaine"></label>
-            <input type="radio" id="5 fois" name="frequency" value="five">
-            <label for="5 fois par semaine">5 fois par semaine</label>
+             <!-- Surface -->
+                <label for="surface">Surface en m² :</label><br>
+                <input type="number" id="surface" name="surface" min="0" required><br><br>
             
+            <!-- Fréquence -->
+            <fieldset>
+                <legend>Fréquence :</legend>
+    
+                <label><input type="radio" name="frequence" value="1x"> 1 fois par semaine</label><br>
+    
+                <label><input type="radio" name="frequence" value="2x"> 2 fois par semaine</label><br>
+    
+                <label><input type="radio" name="frequence" value="5x"> 5 fois par semaine</label>
+            </fieldset>
+            <br><br>
 
-            <label for="options">Options Vitres:</label>
-            <select id="options" name="options">
-                <option value="option1">Oui</option>
-                <option value="option2">Non</option>
+            <!-- Options Vitres -->
+                <label for="vitres">Options Vitres :</label><br>
+                <select id="vitres" name="vitres">
+                    <option value="oui">Oui</option>
+                    <option value="non">Non</option>
+                </select><br><br>
+
+            <!-- Submit -->
+                <button type="submit">Envoyer</button>
+        </form>
+          
             
     </header>
 </body>
