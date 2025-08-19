@@ -9,7 +9,7 @@
 <body>
     <header>
         <form>
-            <div class="container">
+            <div class="container1">
                 <h1>
                 Demandez votre devis gratuit
                 </h1>
@@ -32,11 +32,11 @@
             <fieldset>
                 <legend>Fréquence :</legend>
     
-                <label><input type="radio" name="frequence" value="1x"> 1 fois par semaine</label><br>
+                <label><input id="1x" type="radio" name="frequence" value="1" checked> 1 fois par semaine</label><br>
     
-                <label><input type="radio" name="frequence" value="2x"> 2 fois par semaine</label><br>
+                <label><input id="2x" type="radio" name="frequence" value="2"> 2 fois par semaine</label><br>
     
-                <label><input type="radio" name="frequence" value="5x"> 5 fois par semaine</label>
+                <label><input id="5x" type="radio" name="frequence" value="5"> 5 fois par semaine</label>
             </fieldset>
             <br><br>
 
@@ -48,9 +48,24 @@
                 </select><br><br>
 
             <!-- Submit -->
-                <button type="submit">Envoyer</button>
+                <button type="submit">Calculer</button><br><br>
+            <div class="container2">
+                <div class="montant">
+                    <h2>Montant HT :</h2>
+                    <p id="montant"></p>
+                </div>
+                <div class="tva">
+                    <h2>TVA 20% :</h2>
+                    <p id="tva"></p>
+                </div>
+                <div class="total">
+                    <h2>Total TTC :</h2>
+                    <p id="total"></p>
+                </div>
+            </div>
         </form>
           
+        
             
     </header>
 </body>
