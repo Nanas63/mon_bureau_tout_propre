@@ -26,8 +26,13 @@ form.addEventListener("submit", function(event) {
     }
 
     if(vitres.value === "oui") {
-        montant.textContent = prix *1.10
+        /* ancienne valeur avant correction
+        montant.textContent = prix *1.10 */
+        prix *= 1.10;
     }
-        tva.textContent = prix* 0.20
-        total.textContent = prix *0.20 + prix
+        montant.textContent = prix
+        tva.textContent = (prix* 0.20)
+        total.textContent = (prix *0.20) + prix
+
+        
 })
